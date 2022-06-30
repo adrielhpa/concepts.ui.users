@@ -45,6 +45,8 @@ module.exports = {
           "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
           "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
           "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          "@angular/material": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          "bootstrap": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
           "@ngrx/store": { strictVersion: true, requiredVersion: '^13.2.0' },
           "@ngrx/entity": { strictVersion: true, requiredVersion: '^13.2.0' },
           "@ngrx/store-devtools": { singleton: true, strictVersion: true, requiredVersion: 'auto' },

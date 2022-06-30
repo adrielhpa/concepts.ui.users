@@ -1,0 +1,42 @@
+<ng-container *ngIf="users$ | async as users">
+  <button class="btn btn-success mt-2" routerLink="add">+ New User</button>
+  <ng-container *ngIf="users.length > 0; else noData">
+    <table class="table table-striped table-hover mt-4">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Adress</th>
+          <th>City</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr (click)="goToDetail(user.id)" *ngFor="let user of users">
+          <td>{{user.name}}</td>
+          <td>{{user.age}}</td>
+          <td>{{user.adress}}</td>
+          <td>{{user.city}}</td>
+          <td>{{user.username}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="d-flex flex-column mt-5" *ngIf="statistics">
+      <h4>Statistics</h4>
+      <div class="bg-light row mt-3">
+        <div class="d-flex justify-content-around align-items-center w-100">
+          <p class="mb-0"><span class="fw-bold">Active Users: </span>{{statistics.activeUsers}}</p>
+          <p class="mb-0"><span class="fw-bold">Adult Users (> 18): </span>{{statistics.adultUsers}}</p>
+          <p class="mb-0"><span class="fw-bold">Young Users (< 18): </span>{{statistics.youngUsers}}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</ng-container>
+
+<ng-template #noData>
+  <div class="d-flex justify-content-center view">
+    <h5>Empty data</h5>
+  </div>
+</ng-template>

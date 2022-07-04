@@ -1,0 +1,22 @@
+# Custom Headers must be nested inside a top-level customHeaders key
+functions:
+  app:
+    handler: handler.endpoint
+    events:
+      - http: 
+          method: GET, POST, PUT, DELETE
+          path: /
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+              - Startlower
+              - Text
+              - Access-Control-Allow-Headers
+              - Access-Control-Allow-Origin
+            allowCredentials: false

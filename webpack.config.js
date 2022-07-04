@@ -10,12 +10,13 @@ sharedMappings.register(
 
 module.exports = {
   devServer: {
+    crossOriginLoading: true,
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+      "Access-Control-Allow-Headers": "*"
     },
-    allowedHosts: ['.com']
+    allowedHosts: ['https://master.d3bsqhotd35heu.amplifyapp.com/']
   },
   output: {
     uniqueName: "users",

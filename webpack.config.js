@@ -9,16 +9,13 @@ sharedMappings.register(
   [/* mapped paths to share */]);
 
 module.exports = {
+  mode: "development",
   devServer: {
-    crossOriginLoading: 'anonymous',
+    crossOriginLoading: true,
     headers: {
-      "Access-Control-Allow-Origin": "https://master.d3bsqhotd35heu.amplifyapp.com",
-      "Access-Control-Allow-Methods": "PUT, GET, HEAD, POST, DELETE, OPTIONS",
-      "Access-Control-Allow-Headers": "*"
+      "Access-Control-Allow-Origin": "master.d3bsqhotd35heu.amplifyapp.com",
+      "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE",
     },
-    // allowedHosts: ['https://master.d3bsqhotd35heu.amplifyapp.com'],
-    // allowedOrigins: ['https://master.d3bsqhotd35heu.amplifyapp.com'],
-
   },
   output: {
     uniqueName: "users",

@@ -16,7 +16,9 @@ module.exports = {
       "Access-Control-Allow-Methods": "PUT, GET, HEAD, POST, DELETE, OPTIONS",
       "Access-Control-Allow-Headers": "*"
     },
-    allowedHosts: ['https://master.d3bsqhotd35heu.amplifyapp.com']
+    allowedHosts: ['https://master.d3bsqhotd35heu.amplifyapp.com'],
+    allowedOrigins: ['https://master.d3bsqhotd35heu.amplifyapp.com'],
+
   },
   output: {
     uniqueName: "users",

@@ -13,14 +13,14 @@ module.exports = {
     crossOriginLoading: true,
     headers: {
       "Access-Control-Allow-Origin": "https://master.d3bsqhotd35heu.amplifyapp.com",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Methods": "PUT, GET, HEAD, POST, DELETE, OPTIONS",
       "Access-Control-Allow-Headers": "*"
     },
-    allowedHosts: ['https://master.d3bsqhotd35heu.amplifyapp.com/']
+    allowedHosts: ['https://master.d3bsqhotd35heu.amplifyapp.com']
   },
   output: {
     uniqueName: "users",
-    publicPath: "auto"
+    publicPath: "/remoteEntry.js"
   },
   optimization: {
     runtimeChunk: false

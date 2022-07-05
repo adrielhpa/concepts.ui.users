@@ -12,7 +12,7 @@ module.exports = {
   devServer: {
     crossOriginLoading: true,
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Origin": "https://master.d3bsqhotd35heu.amplifyapp.com",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
       "Access-Control-Allow-Headers": "*"
     },

@@ -3,7 +3,7 @@ functions:
   app:
     handler: handler.endpoint
     events:
-      - http: 
+      - http:
           method: GET, POST, PUT, DELETE
           path: /
           cors:
@@ -17,6 +17,7 @@ functions:
               - X-Amz-User-Agent
               - Startlower
               - Text
-              - Access-Control-Allow-Headers
-              - Access-Control-Allow-Origin
+              - Access-Control-Allow-AnyHeaders
+              - Access-Control-Allow-AnyOrigin
+              - Access-Control-Allow-AnyCredentials
             allowCredentials: false
